@@ -74,6 +74,7 @@ main {
   max-width: var(--max-width);
   margin: 0 auto;
   min-height: 60vh;
+  padding: 0 1rem;  /* Add horizontal padding */
 }
 
 h1, h2, h3 {
