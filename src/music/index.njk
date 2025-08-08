@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Music
+---
+
+<h1>Music</h1>
+
+<ul class="post-list">
+{% for post in collections.music %}
+    <li>
+        <article>
+            <h3 class="post-title">
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h3>
+            <p class="post-meta">{{ post.date | date }}</p>
+        </article>
+    </li>
+{% endfor %}
+</ul>
+
+{% if collections.music.length == 0 %}
+<p>No music posts yet.</p>
+{% endif %}

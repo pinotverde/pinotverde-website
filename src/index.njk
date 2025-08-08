@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+title: Home
+---
+
+<section class="intro">
+    <p>Welcome to my personal space where I share my writing, photography, and music.</p>
+</section>
+
+<section class="recent-posts">
+    <h2>Recent Posts</h2>
+    
+    <ul class="post-list">
+    {% for post in collections.writing %}
+        <li>
+            <article>
+                <h3 class="post-title">
+                    <a href="{{ post.url }}">{{ post.data.title }}</a>
+                </h3>
+                <p class="post-meta">
+                    {{ post.date | date }} • Writing
+                </p>
+            </article>
+        </li>
+    {% endfor %}
+    
+    {% for post in collections.photography %}
+        <li>
+            <article>
+                <h3 class="post-title">
+                    <a href="{{ post.url }}">{{ post.data.title }}</a>
+                </h3>
+                <p class="post-meta">
+                    {{ post.date | date }} • Photography
+                </p>
+            </article>
+        </li>
+    {% endfor %}
+    
+    {% for post in collections.music %}
+        <li>
+            <article>
+                <h3 class="post-title">
+                    <a href="{{ post.url }}">{{ post.data.title }}</a>
+                </h3>
+                <p class="post-meta">
+                    {{ post.date | date }} • Music
+                </p>
+            </article>
+        </li>
+    {% endfor %}
+    </ul>
+    
+    {% if collections.writing.length == 0 and collections.photography.length == 0 and collections.music.length == 0 %}
+    <p>No posts yet. Time to create something!</p>
+    {% endif %}
+</section>

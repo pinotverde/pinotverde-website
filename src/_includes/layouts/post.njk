@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="post">
+    <h1>{{ title }}</h1>
+    <p class="post-date">{{ date | date }}</p>
+    
+    <div class="post-content">
+        {{ content | safe }}
+    </div>
+</article>
