@@ -74,7 +74,29 @@ main {
   max-width: var(--max-width);
   margin: 0 auto;
   min-height: 60vh;
-  padding: 0 1rem;  /* Add horizontal padding */
+  padding: 0 1.5rem;  /* Increased padding */
+}
+
+/* Specific fixes for lists */
+main ul, main ol {
+  padding-left: 1.5rem;
+  margin-left: 0;
+}
+
+main li {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+/* Ensure content doesn't overflow on mobile */
+@media (max-width: 768px) {
+  main {
+    padding: 0 1.5rem;
+  }
+  
+  main ul, main ol {
+    padding-left: 1.2rem;
+  }
 }
 
 h1, h2, h3 {
