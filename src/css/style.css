@@ -7,7 +7,7 @@
   --max-width: 650px;
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --text-color: #e5e5e5;
   --bg-color: #1a1a1a;
   --accent-color: #66b3ff;
@@ -28,7 +28,9 @@ body {
   color: var(--text-color);
   background: var(--bg-color);
   padding: 2rem;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 header {
@@ -74,11 +76,12 @@ main {
   max-width: var(--max-width);
   margin: 0 auto;
   min-height: 60vh;
-  padding: 0 1.5rem;  /* Increased padding */
+  padding: 0 1.5rem; /* Increased padding */
 }
 
 /* Specific fixes for lists */
-main ul, main ol {
+main ul,
+main ol {
   padding-left: 1.5rem;
   margin-left: 0;
 }
@@ -93,13 +96,16 @@ main li {
   main {
     padding: 0 1.5rem;
   }
-  
-  main ul, main ol {
+
+  main ul,
+  main ol {
     padding-left: 1.2rem;
   }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Montserrat', sans-serif;
   margin: 2rem 0 1rem;
 }
@@ -162,7 +168,7 @@ footer {
     font-size: 18px;
     padding: 1rem;
   }
-  
+
   nav {
     gap: 1rem;
   }

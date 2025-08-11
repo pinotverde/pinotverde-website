@@ -1,8 +1,8 @@
 ---
-title: 
+title:
 date: Created
 layout: layouts/post.njk
-category: 
+category:
 ---
 
 Content goes here...

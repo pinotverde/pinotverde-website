@@ -8,9 +8,9 @@ category: Photography
 Testing how photos look on the site.
 
 ![Placeholder Image](https://via.placeholder.com/800x600)
-*This is a caption for the photo above*
+_This is a caption for the photo above_
 
 ![Another Placeholder](https://via.placeholder.com/800x600)
-*Another photo with its caption*
+_Another photo with its caption_
 
 These will be replaced with real photos soon!
