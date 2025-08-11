@@ -28,6 +28,10 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob('src/music/*.md').reverse();
   });
 
+  eleventyConfig.addCollection('ai-archive', function (collectionApi) {
+  return collectionApi.getFilteredByGlob('src/ai-archive/*.md').reverse();
+  });
+
   // Minify HTML in production builds
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
     if (

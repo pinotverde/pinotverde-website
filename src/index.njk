@@ -49,9 +49,23 @@ title: Home
             </article>
         </li>
     {% endfor %}
+
+    {% for post in collections['ai-archive'] %}
+        <li>
+            <article>
+                <h3 class="post-title">
+                    <a href="{{ post.url }}">{{ post.data.title }}</a>
+                </h3>
+                <p class="post-meta">
+                    {{ post.date | date }} • AI Archive
+                </p>
+            </article>
+        </li>
+    {% endfor %}
+
     </ul>
     
-    {% if collections.writing.length == 0 and collections.photography.length == 0 and collections.music.length == 0 %}
+     {% if collections.writing.length == 0 and collections.photography.length == 0 and collections.music.length == 0 and collections['ai-archive'].length == 0 %}
     <p>No posts yet. Time to create something!</p>
     {% endif %}
 </section>
